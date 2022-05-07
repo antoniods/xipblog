@@ -2,6 +2,8 @@
 
 {block name='page_header_container'}{/block}
 {block name='head_seo_title'} {$page.meta.title} - {$xipblogpost.post_title} {/block}
+{block name='head_seo_description'} {$xipblogpost.meta_description  nofilter} {/block}
+{block name='head_seo_keywords'} {$xipblogpost.meta_keyword} {/block}
 
 {block name='head' append}
     <meta property="og:url"                content="{$urls.current_url}" />
